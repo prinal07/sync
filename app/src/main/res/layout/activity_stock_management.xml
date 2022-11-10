@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockManagement"
+    android:background="@color/primaryColor">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Stock Management"
+        android:fontFamily="@font/googlefont"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#fff"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stockRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:listitem="@layout/stock_item"
+        android:layout_below="@id/addItem"
+        android:layout_above="@id/toolbar4"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All items"
+        android:fontFamily="@font/googlefont"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/text"
+        android:layout_above="@id/stockRecyclerView"/>
+
+    <ImageButton
+        android:id="@+id/addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_add_24"
+        android:backgroundTint="#00FFFFFF"/>
+
+    <LinearLayout
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4"
+        >
+
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_home_black_24dp"
+            android:background="#00000000"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/targetsbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_attach_money_black_24dp"
+            android:background="#00000000"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/chatbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_textsms_black_24dp"
+            android:background="#00000000"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/groupworkbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:background="#00000000"
+            android:layout_weight="1"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

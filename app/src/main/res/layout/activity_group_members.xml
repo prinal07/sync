@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".groupmembers"
+    android:background="#BB86FC">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#121212"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <TextView
+            android:id="@+id/groupnameclickable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/time"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:text="nameofgroup"
+            android:textColor="#BB86FC"
+            android:textSize="30dp" />
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#00FFFFFF"
+            android:minHeight="?attr/actionBarSize"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/groupinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_below="@id/toolbar"
+        android:background="#121212">
+
+        <TextView
+            android:id="@+id/textviewGroupdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Group Description"
+            android:layout_centerVertical="true"
+            android:textColor="#BB86FC"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter"/>
+
+        <TextView
+            android:id="@+id/thegroupdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:text="some description bnlah blah blah blah blah blah "
+            android:textColor="#BB86FC"
+            android:layout_toRightOf="@+id/textviewGroupdescription"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/groupinfo"
+        android:layout_margin="20dp"
+        android:background="#121212">
+
+        <RelativeLayout
+            android:id="@+id/abcd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize">
+
+
+            <ImageButton
+                android:id="@+id/searchparticipants"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_search_pink_24dp"
+                android:background="#00FFFFFF"
+                android:layout_alignParentRight="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="Select Participants"
+                android:textColor="#BB86FC"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter"/>
+
+
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="#BB86FC"
+            android:id="@+id/membersrecycler"
+            android:layout_below="@+id/abcd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            tools:listitem="@layout/memberslayout"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

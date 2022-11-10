@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+
+    android:background="#74212121"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/annMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/annTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/annMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/inter"
+        android:text="9 May 2003, 05:25 PM"
+        android:textColor="#B5B5B5"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

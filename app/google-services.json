@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "950878315184",
+    "firebase_url": "https://iatry2.firebaseio.com",
+    "project_id": "iatry2",
+    "storage_bucket": "iatry2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950878315184:android:5d8371a48c33a99d265175",
+        "android_client_info": {
+          "package_name": "com.example.iatry2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950878315184-3u3atqb78lg7ekhao1j3931thl9107g4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iatry2",
+            "certificate_hash": "52dc0ee0ad43bb2464ea91af64607bcb5d297377"
+          }
+        },
+        {
+          "client_id": "950878315184-pommukijk00ge76db3sh03qh34lsntef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaYtRUQ381kb1F1oFN8rTWAngKHs66EVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950878315184-pommukijk00ge76db3sh03qh34lsntef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

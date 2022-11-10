@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+
+    android:background="@drawable/itemlist_curved"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/addedItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/timeAdded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addedItem"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/inter"
+        android:text="05:25 PM"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cashncarrylist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/timeAdded"
+        android:layout_below="@id/addedItem"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/inter"
+        android:text="Employee XYZ,"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

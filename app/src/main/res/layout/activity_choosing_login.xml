@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_light"
+    tools:context=".choosingLogin">
+
+    <Button
+        android:id="@+id/ceoTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/choosingbutton"
+        android:fontFamily="@font/lovelo"
+        android:padding="10dp"
+        android:text="Ceo"
+        android:textAllCaps="true"
+        android:textColor="#19243a"
+        android:textSize="70dp" />
+
+    <ImageView
+        android:id="@+id/clickableIcon1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_touch_app_black_24dp"
+        android:layout_toRightOf="@id/ceoTag"
+        android:layout_marginTop="250dp" />
+
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:background="@drawable/choosingbutton"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="128dp"/>
+    <Button
+        android:id="@+id/employeeTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/choosingbutton"
+        android:fontFamily="@font/lovelo"
+        android:padding="10dp"
+        android:text="Employee"
+        android:textAllCaps="true"
+        android:textColor="#19243a"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:id="@+id/clickableIcon2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_touch_app_black_24dp"
+        android:layout_toRightOf="@id/employeeTag"
+        android:layout_marginTop="480dp" />
+
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#19243a"
+        />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:layout_centerVertical="true"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:layout_marginRight="-360dp"
+        android:rotation="-90"
+        android:text="Sign Up"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        android:textSize="30dp">
+
+    </TextView>
+
+
+
+</RelativeLayout>

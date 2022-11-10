@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employeeSalary"
+    android:background="@color/primaryColor">
+
+
+
+    <TextView
+        android:id="@+id/salary"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:fontFamily="@font/lovelo"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:text="Salary (£)"
+        android:textColor="@color/secondary"
+        />
+
+
+
+    <TextView
+        android:id="@+id/monthtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/salarylayout"
+        android:text=""
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:fontFamily="@font/googlefont"
+        android:textColor="@color/secondary_light"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/salarylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline"
+        android:layout_centerVertical="true">
+
+    <TextView
+        android:id="@+id/salaryvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ask ceo to add salary"
+        android:gravity="center"
+        android:textSize="100dp"
+        android:fontFamily="@font/lovelo"
+        android:textColor="@color/secondary"
+
+        />
+</RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondary"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4"
+        >
+
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_home_black_24dp"
+            android:background="#00FFFFFF"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/targetsbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_attach_money_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/chatbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_textsms_black_24dp"
+            android:background="#00FFFFFF"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/groupworkbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:background="#00FFFFFF"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

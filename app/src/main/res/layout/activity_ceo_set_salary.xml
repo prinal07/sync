@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CeoSetSalary"
+    android:background="@drawable/gradient_cashncarry">
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Salary"
+        android:gravity="center"
+        android:fontFamily="@font/lovelo"
+        android:textSize="55dp"
+        android:padding="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/employeeSelection"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/text"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#3BFFFFFF"
+        android:spinnerMode="dropdown"
+        />
+
+    <Spinner
+        android:id="@+id/month"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/employeeSelection"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#3BFFFFFF"
+        android:spinnerMode="dropdown"
+        />
+
+
+    <EditText
+        android:id="@+id/salaryAmount"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="number"
+        android:layout_below="@id/month"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Salary Amount"
+        android:padding="20dp"
+        android:backgroundTint="@color/primaryColor"
+        />
+
+    <Button
+        android:id="@+id/addSalary"
+        android:text="Set"
+        android:fontFamily="@font/googlefont"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/salaryAmount"
+
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4"
+        >
+
+        <ImageButton
+            android:id="@+id/homebtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:src="@drawable/ic_home_black_24dp"
+            android:background="#00000000"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/targetsbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/ic_attach_money_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/chatbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_textsms_black_24dp"
+            android:background="#00000000"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/groupworkbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:background="#00000000"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

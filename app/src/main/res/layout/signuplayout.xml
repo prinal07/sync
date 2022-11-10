@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CeoSignUp"
+    android:background="@color/primaryColor">
+
+
+    <EditText
+        android:id="@+id/businessName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter name of the Business"
+        android:fontFamily="@font/inter"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="249dp"
+        android:layout_marginTop="200dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFF"/>
+
+    <EditText
+        android:id="@+id/textID"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter email Id"
+        android:fontFamily="@font/inter"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="249dp"
+        android:layout_marginTop="250dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFF"/>
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:fontFamily="@font/inter"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="249dp"
+        android:layout_marginTop="150dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFF"
+        />
+
+    <EditText
+        android:id="@+id/textPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:fontFamily="@font/inter"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="309dp"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFF"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="@font/robotbold"
+        android:text="Enter Details"
+        android:textColor="#FFF"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/codeTextview"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"
+        android:fontFamily="@font/inter"
+        android:layout_below="@id/signUP2"
+        android:textSize="30dp"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:background="@drawable/codetext">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/signUP2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="210dp"
+        android:layout_below="@id/textPass"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/inter"
+        android:text="Sign Up"
+        android:textColor="#FFF"
+        />
+
+    <ImageButton
+        android:id="@+id/copyCODE"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="35dp"
+        android:visibility="invisible"
+        android:layout_below="@id/signUP2"
+        android:background="@color/primaryColor"
+        android:src="@drawable/ic_filenewsvg" />
+
+
+</RelativeLayout>
