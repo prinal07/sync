@@ -6,7 +6,7 @@ App features include:
   - Announcements 
   - Personalised Dashboards
   - Salary Assignment
-  - Messaging/Chat (1-*; one customer can only message the manager)
+  - Messaging/Chat (1-*; a customer can only message the manager, the manager can message all the customers)
   - Stock Management
   - Cash N' Carry List
   
